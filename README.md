@@ -5,6 +5,7 @@ Prerequisites to execute the code in this repo are:
 * Python 3.12+
 * Ollama server
 * A GPU with at least 8 GB of VRAM
+  
 The reference model is ```qwen2.5:7b-instruct-q4_K_M```, available in the Ollama's model catalog. It needs to be pulled from there before running the code:  
 ```ollama pull qwen2.5:7b-instruct-q4_K_M```  
 Then clone this repo, create a Python virtual environment, activate it and install the requirements listed in [requirements.txt](requirements.txt).  
