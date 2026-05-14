@@ -31,7 +31,7 @@ def get_sql_prompts_for_domain(dataset, domain_value, sample_count=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="ArXiv research agent powered by Hermes Agent + Ollama.",
+        description="Benchmark of the W5H classifier towards the gretelai/synthetic_text_to_sql dataset.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     train_dataset = dataset['train']
 
     sql_prompts = get_sql_prompts_for_domain(train_dataset, args.domain, int(args.samples))
-    #print(sql_prompts)
+    
     classifier = W5HClassifier(
         model="qwen2.5:7b-instruct-q4_K_M",
         temperature=0.1
