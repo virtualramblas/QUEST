@@ -1,0 +1,6 @@
+# General requirements
+openai==2.36.0
+pydantic==2.13.4
+
+# Benchmarking
+datasets==4.8.5
